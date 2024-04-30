@@ -142,6 +142,10 @@ public class Runner {
                 )
         );
 
+        // 2716. Minimize String Length
+        System.out.println("--- 2716. Minimize String Length ---");
+        Assert.print(3, MinimizeStringLength.minimizedStringLength("aaabc"));
+
         // TODO написать настройку работы github actions для тестирований новых решений
     }
 }
