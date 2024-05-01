@@ -20,7 +20,6 @@ jobs:
         if: success() || failure()
         with:
           name: Maven Tests Result
-          path: ${{ github.workspace }}/target/surefire-reports/TEST-TestSuite.xml
+          path: target/surefire-reports/*.xml
           reporter: java-junit
           fail-on-error: true
-          java-version: 17
