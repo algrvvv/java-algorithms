@@ -10,14 +10,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CountItemsMatchingRuleTest {
     @Test
-    public void solutionTest() {
+    public void firstSolutionTestCase() {
         List<List<String>> lst1 = new ArrayList<>(Arrays.asList(
                 Arrays.asList("phone", "blue", "pixel"),
                 Arrays.asList("computer", "silver", "lenovo"),
                 Arrays.asList("phone", "gold", "iphone")
         ));
         assertEquals(1, CountItemsMatchingRule.countMatches(lst1, "color", "silver"));
+    }
 
+    @Test
+    public void secondSolutionTestCase() {
         List<List<String>> lst2 = new ArrayList<>(Arrays.asList(
                 Arrays.asList("phone", "blue", "pixel"),
                 Arrays.asList("computer", "silver", "phone"),

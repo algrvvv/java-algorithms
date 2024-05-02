@@ -6,8 +6,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CheckIfTheSentenceIsPangramTest {
     @Test
-    public void solutionTest() {
+    public void firstSolutionTestCase() {
         assertTrue(CheckIfTheSentenceIsPangram.checkIfPangram("thequickbrownfoxjumpsoverthelazydog"));
+    }
+
+    @Test
+    public void secondSolutionTestCase() {
         assertFalse(CheckIfTheSentenceIsPangram.checkIfPangram("leetcode"));
     }
 }
