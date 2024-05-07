@@ -6,23 +6,30 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class SplitStringsBySeparatorTest {
     @Test
-    public void solutionTest() {
+    public void firstSolutionTestCase() {
         assertEquals(new ArrayList<>(Arrays.asList("one", "two", "three", "four", "five", "six")),
                 SplitStringsBySeparator.splitWordsBySeparator(
                         new ArrayList<>(Arrays.asList("one.two.three", "four.five", "six")),
                         '.'
                 ));
+    }
 
-        assertEquals(new ArrayList<>(Arrays.asList("easy","problem")),
+    @Test
+    public void secondSolutionTestCase() {
+        assertEquals(new ArrayList<>(Arrays.asList("easy", "problem")),
                 SplitStringsBySeparator.splitWordsBySeparator(
-                        new ArrayList<>(Arrays.asList("$easy$","$problem$")),
+                        new ArrayList<>(Arrays.asList("$easy$", "$problem$")),
                         '$'
                 ));
+    }
 
+    @Test
+    public void thirdSolutionTestCase() {
         assertEquals(new ArrayList<>(List.of()),
                 SplitStringsBySeparator.splitWordsBySeparator(
                         new ArrayList<>(List.of("|||")),

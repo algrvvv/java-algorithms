@@ -6,8 +6,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FaultyKeyboardTest {
     @Test
-    public void solutionTest() {
+    public void firstSolutionTestCase() {
         assertEquals("rtsng", FaultyKeyboard.finalString("string"));
+    }
+
+    @Test
+    public void secondSolutionTestCase() {
         assertEquals("ponter", FaultyKeyboard.finalString("poiinter"));
     }
 }

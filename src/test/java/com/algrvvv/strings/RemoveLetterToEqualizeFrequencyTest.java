@@ -7,8 +7,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RemoveLetterToEqualizeFrequencyTest {
     @Test
-    public void solutionTest() {
+    public void firstSolutionTestCase() {
         assertTrue(RemoveLetterToEqualizeFrequency.equalFrequency("abcc"));
+    }
+
+    @Test
+    public void secondSolutionTestCase() {
         assertFalse(RemoveLetterToEqualizeFrequency.equalFrequency("aazz"));
     }
 }
